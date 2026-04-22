@@ -1,0 +1,172 @@
+/*
+****** LIMPAR FORMATAÇÕES ******
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+****** FORMATAÇÕES GENÉRICAS ******
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*background-color: #C4C4C4;*/
+    background: url('../imagens/paisagem (2).jpg') no-repeat center; /* usei os dois pontos (..) para voltar uma pasta*/   
+    background-size: cover;
+}
+
+
+h1{
+    color: #252525;
+    font-size: 40px;
+}
+
+h2{
+    color: #0066CC;
+}
+
+h3{
+    color: #565656;
+    background: #CCCCCC;
+    border-radius: 20px;
+}
+
+/*
+****** HEADER ******
+*/
+header {
+    background-color: #834343;
+    padding: 15px;
+    text-align: center; 
+}
+
+header a:link, header a:visited {
+    color: white;
+    padding: 8px 12px; /* cima e baixo 8px, direita e esquerda 12 px */
+}
+
+header a:hover {
+    color: #0066CC;
+    background-color:white;
+    text-decoration:none;
+}
+
+/*
+****** MENU ******
+*/
+nav{
+    padding: 10px;
+}
+
+/*
+****** RODAPÉ (FOOTER) ******
+*/
+
+footer{
+    clear:both; /*limpa os floats, ou seja, o rodapé não fica ao lado do conteúdo, mas sim abaixo*/
+    text-align: center;
+    background: white;
+    color: #0066CC;
+    padding: 15px;
+}
+
+/*
+****** SECTION - CONTENT ******
+*/
+
+section{
+    width: 920px;
+    margin: 0 auto; /*conteúdo centralizado, automático na esquerda e na direita, e nas partes superior e inferior é zero*/
+    /*background-color: #CCCCCC;*/
+    padding: 5px;
+    box-sizing: border-box;
+    /* width: 100%; /*ajusta a largura para 100% do contêiner pai, garantindo que o conteúdo se ajuste corretamente dentro do layout, mesmo que a largura do contêiner pai seja menor que 920px. O problema é que ignora a largura fixa de 920px*/
+}
+
+@media (max-width: 920px) { /*se largura de tela for menor que 920px, ou seja, em telas menores, como smartphones, quebra a section*/
+    section {
+        width: 100%;
+    }
+}
+
+/*
+****** LINKS ******
+*/
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #0066CC;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*
+****** OUTROS SELETORES ******
+*/
+
+.logo {
+    padding:10px;
+}
+
+.white{
+    color: rgb(255, 255, 255);
+}
+
+/*
+****** POSTS ******
+*/
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.data-post{
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0066CC;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.img-post{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-post-perfil{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+/*
+****** FORM ******
+*/
+
+@media (max-width: 500px) { /*se largura de tela for menor que 500px, ou seja, em telas menores, como smartphones, quebra a linha*/
+    input, textarea {
+        width: 100%;
+    }
+}
